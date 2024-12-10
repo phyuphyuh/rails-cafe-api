@@ -6,7 +6,7 @@ class Api::V1::CafesController < ApplicationController
       @cafes = Cafe.all
     end
     # Putting the most recently created cafes first
-    render json: @cafes.order(created_at: :desc)
+    # render json: @cafes.order(created_at: :desc)
   end
 
   def create
